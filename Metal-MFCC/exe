@@ -1,0 +1,6 @@
+mpif90  -Wall *.F90 -o metal-mfcc.x 
+#cp metal-mfcc.x test2
+#cd test2
+#./metal-mfcc.x < input 
+#cd ..
+

@@ -1,0 +1,38 @@
+&qm_ctrl
+    qmproc='14'
+    qmmem='1000MW'
+    qmmethod='m062x'
+    qmbasis='6-31g*'
+    stable_mode=0
+    center_atom=0
+&end
+
+&job_ctrl
+    basename='protein'
+    Frag_method='EE-GMFCC'
+    ifrun='yes'
+    ifread='yes'
+    if_field='yes'
+    add_bg='yes'
+    add_word=' scf(conver=6,xqc) '
+    strategy=2
+    bad_point=1
+    b2_cutoff=4.5
+    frag_mode='up'
+    if_fullQM='no'
+    charge_type='Amber'
+    check_conver='no'
+    software='g09'
+&end
+
+#&amoeba_ctrl
+#    subsys='protein'
+#    Fullsys='2OED'
+#    Amoebaprm='Metal-MFCC/params/amoebapro13.prm'
+#    Binpath='Metal-MFCC/bin'
+#&end
+
+chain_info
+         1
+    1   56
+
